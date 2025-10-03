@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Ridgeline IT Solutions</title>
+  <meta name="description" content="Learn about Brian Carlson, founder of Ridgeline IT Solutions, with over 16 years of IT experience.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased">
+
+<!-- Header -->
+<header id="site-header" class="bg-white shadow fixed w-full top-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+    <div class="flex-shrink-0">
+      <a href="index.html"><img src="assets/logo.png" alt="Ridgeline IT Solutions" class="h-20 transition-all duration-300" id="site-logo"></a>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+      <a href="index.html" class="hover:text-green-600">Home</a>
+      <a href="services.html" class="hover:text-green-600">Services</a>
+      <a href="pulse-check.html" class="hover:text-green-600">Pulse Check</a>
+      <a href="contact.html" class="hover:text-green-600">Contact</a>
+      <a href="about.html" class="hover:text-green-600">About</a>
+      <a href="tel:2092132088" class="text-green-600 font-bold">Call Us: (209) 213-2088</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  function adjustHeader() {  
+    const logo = document.getElementById("site-logo");
+    const header = document.getElementById("site-header");
+    if (window.scrollY > 50) {
+      logo.classList.remove("h-20");
+      logo.classList.add("h-10");
+      header.classList.add("shadow-md");
+    } else {
+      logo.classList.remove("h-10");
+      logo.classList.add("h-20");
+      header.classList.remove("shadow-md");
+    }
+    document.body.style.paddingTop = header.offsetHeight + "px";
+  }
+  window.addEventListener("scroll", adjustHeader);
+  window.addEventListener("load", adjustHeader);
+  window.addEventListener("resize", adjustHeader);
+</script>
+
+<!-- Hero -->
+<section class="bg-gray-100 py-20 text-center mt-0">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4 text-green-700">About Us</h1>
+  <p class="text-xl">Get to know the people behind Ridgeline IT Solutions.</p>
+</section>
+
+<!-- Mission Section -->
+<section class="max-w-5xl mx-auto py-12 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-4 text-green-700">Our Mission</h2>
+  <p class="text-lg text-gray-700">
+    At Ridgeline IT Solutions, our mission is to empower businesses with reliable, secure, and forward-thinking technology solutions.
+    We aim to be more than just an IT provider — we are a trusted partner in helping businesses thrive in a digital-first world.
+  </p>
+</section>
+
+<!-- Community Section -->
+<section class="bg-gray-50 py-12 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4 text-green-700">Community Commitment</h2>
+    <p class="text-lg text-gray-700">
+      We live here, shop here, and raise our families here — which is why giving back matters.
+      Ridgeline offers discounted services to local nonprofits, seniors, and military families, hosts free security awareness trainings,
+      and invests in youth and community programs that make the Mother Lode stronger.
+    </p>
+  </div>
+</section>
+
+<!-- Who We Serve -->
+<section class="max-w-5xl mx-auto py-12 px-6">
+  <h2 class="text-3xl font-bold mb-4 text-green-700 text-center">Who We Serve</h2>
+  <p class="text-lg text-gray-700 text-center max-w-4xl mx-auto">
+    We partner with organizations across a wide range of industries — including real estate, healthcare, manufacturing, retail,
+    hospitality, and state and local government. This breadth of experience means we understand both the specific needs of your
+    sector and the broader technology ecosystem your business operates within.
+  </p>
+</section>
+
+<!-- Founder Bio -->
+<main class="max-w-5xl mx-auto py-16 px-6">
+  <div class="grid md:grid-cols-3 gap-12 items-center">
+    <div class="md:col-span-1 flex justify-center">
+      <img id="headshot" src="assets/headshots/head1.jpg" alt="Brian Carlson" class="rounded-2xl shadow-lg max-h-80 object-cover">
+    </div>
+    <div class="md:col-span-2">
+      <h2 class="text-3xl font-bold mb-4 text-green-700">Brian Carlson</h2>
+      <p class="mb-4">
+        Brian Carlson has over 16 years of professional IT experience. After studying Computer Science at Chabot Community College,
+        he began his career as a junior systems administrator for a large printing company, managing more than 300 computers across
+        20 locations in California. He later founded and operated SF Bay Computers before joining a larger IT company in the Bay Area.
+        Today, Brian leads Ridgeline IT Solutions and is pursuing his CISSP certification to further validate his expertise in cybersecurity leadership,
+        implementation, and management.
+      </p>
+      <p>
+        Beyond technology, Brian enjoys skiing, hiking, and camping in the Sierra Nevada. He is a father of three, a world traveler, and the founder
+        of the California Wilderness Alliance, a nonprofit dedicated to preserving California’s natural spaces. He also restores classic arcade machines,
+        practices juggling, and loves to cook — especially experimenting with sauces — bringing the same care and experimentation to the kitchen that he
+        brings to his work in IT.
+      </p>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-100 py-6 mt-16">
+  <div class="text-center text-gray-700">
+    <p>📞 <a href="tel:2092132088" class="text-green-600 hover:underline">(209) 213-2088</a> |
+       ✉️ <a href="mailto:info@ridgelineitsolutions.com" class="text-green-600 hover:underline">info@ridgelineitsolutions.com</a></p>
+    <p class="mt-2 text-sm">&copy; 2025 Ridgeline IT Solutions. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Random Headshot Script with JSON + Fallback -->
+<script>
+  (function() {
+    const fallbackHeadshots = [
+      "assets/headshots/head1.jpg",
+      "assets/headshots/head2.jpg",
+      "assets/headshots/head3.jpg",
+      "assets/headshots/head4.jpg"
+    ];
+
+    function pickRandom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    const imgEl = document.getElementById("headshot");
+
+    fetch("assets/headshots.json")
+      .then(r => {
+        if (!r.ok) throw new Error("Failed to load headshots.json");
+        return r.json();
+      })
+      .then(data => {
+        if (data && Array.isArray(data.headshots) && data.headshots.length) {
+          imgEl.src = pickRandom(data.headshots);
+        } else {
+          console.warn("headshots.json invalid, using fallback");
+          imgEl.src = pickRandom(fallbackHeadshots);
+        }
+      })
+      .catch(err => {
+        console.warn("Headshot rotation error, using fallback:", err);
+        imgEl.src = pickRandom(fallbackHeadshots);
+      });
+  })();
+</script>
+
+</body>
+</html>
