@@ -9,7 +9,12 @@
     <div class="flex-shrink-0">
       <a href="index.html"><img src="assets/logo.png" alt="Ridgeline IT Solutions" class="h-20 transition-all duration-300" id="site-logo"></a>
     </div>
-    <nav class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+<nav class="hidden md:flex space-x-8 text-gray-700 font-semibold" id="mobile-menu">
       <a href="index.html" class="hover:text-green-600">Home</a>
       <a href="services.html" class="hover:text-green-600">Services</a>
       <a href="pulse-check.html" class="hover:text-green-600">Pulse Check</a>
@@ -220,5 +225,18 @@
 </footer>
 
 
+
+<!-- Mobile menu toggle (minimal) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('menu-toggle');
+  var menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', function() {
+      menu.classList.toggle('hidden');
+    });
+  }
+});
+</script>
 </body>
 </html>
