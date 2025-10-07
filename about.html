@@ -172,38 +172,7 @@
 </div>
 </footer>
 <!-- Random Headshot Script with JSON + Fallback -->
-<script>
-  (function() {
-    const fallbackHeadshots = [
-      "assets/headshots/head1.jpg",
-      "assets/headshots/head2.jpg"
-    ];
 
-    function pickRandom(arr) {
-      return arr[Math.floor(Math.random() * arr.length)];
-    }
-
-    const imgEl = document.getElementById("headshot");
-
-    fetch("assets/headshots.json")
-      .then(r => {
-        if (!r.ok) throw new Error("Failed to load headshots.json");
-        return r.json();
-      })
-      .then(data => {
-        if (data && Array.isArray(data.headshots) && data.headshots.length) {
-          imgEl.src = pickRandom(data.headshots);
-        } else {
-          console.warn("headshots.json invalid, using fallback");
-          imgEl.src = pickRandom(fallbackHeadshots);
-        }
-      })
-      .catch(err => {
-        console.warn("Headshot rotation error, using fallback:", err);
-        imgEl.src = pickRandom(fallbackHeadshots);
-      });
-  })();
-</script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const btn  = document.getElementById('menu-toggle');
@@ -249,5 +218,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+</script><script>
+fetch("assets/headshots.json")
+  .then(response => response.json())
+  .then(data => {
+    const imgEl = document.getElementById("headshot");
+    if (data && Array.isArray(data.headshots) && data.headshots.length) {
+      const random = data.headshots[Math.floor(Math.random() * data.headshots.length)];
+      imgEl.src = random;
+    }
+  })
+  .catch(err => console.error("Headshot JSON load failed:", err));
 </script></body>
 </html>
