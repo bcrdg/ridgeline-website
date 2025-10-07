@@ -1,30 +1,42 @@
 
-
-
-
-
-
-<header id="site-header" class="bg-white shadow fixed w-full top-0 z-50 transition-all duration-300">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-    <div class="flex-shrink-0">
-      <a href="index.html"><img src="assets/logo.png" alt="Ridgeline IT Solutions" class="h-20 transition-all duration-300" id="site-logo"></a>
-    </div>
-        <button id="menu-toggle" class="md:hidden focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-<nav class="hidden md:flex space-x-8 text-gray-700 font-semibold" id="mobile-menu">
-      <a href="index.html" class="hover:text-green-600">Home</a>
-      <a href="services.html" class="hover:text-green-600">Services</a>
-      <a href="pulse-check.html" class="hover:text-green-600">Pulse Check</a>
-      <a href="contact.html" class="hover:text-green-600">Contact</a>
-      <a href="about.html" class="hover:text-green-600">About</a>
-      <a href="tel:2092132088" class="text-green-600 font-bold">Call Us: (209) 213-2088</a>
-    </nav>
-  </div>
+<header class="bg-white shadow fixed w-full top-0 z-50 transition-all duration-300" id="site-header">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+<div class="flex items-center justify-between">
+<!-- Logo -->
+<div class="flex-shrink-0">
+<a href="index.html">
+<img alt="Ridgeline IT Solutions" class="h-20 transition-all duration-300" id="site-logo" src="assets/logo.png"/>
+</a>
+</div>
+<!-- Mobile hamburger -->
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open main menu" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-green-700 hover:bg-gray-100 focus:outline-none" id="menu-toggle">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<!-- Desktop nav -->
+<nav class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+<a class="hover:text-green-600" href="index.html">Home</a>
+<a class="hover:text-green-600" href="services.html">Services</a>
+<a class="hover:text-green-600" href="pulse-check.html">Pulse Check</a>
+<a class="hover:text-green-600" href="contact.html">Contact</a>
+<a class="hover:text-green-600" href="about.html">About</a>
+<a class="text-green-600 font-bold" href="tel:2092132088">Call Us: (209) 213-2088</a>
+</nav>
+</div>
+<!-- Mobile nav (hidden by default) -->
+<nav class="md:hidden hidden flex flex-col items-center bg-white shadow-lg rounded-b-xl mt-3 overflow-hidden" id="mobile-menu">
+<a class="w-full px-4 py-3 text-center border-t first:border-t-0 hover:bg-gray-50" href="index.html">Home</a>
+<a class="w-full px-4 py-3 text-center border-t hover:bg-gray-50" href="services.html">Services</a>
+<a class="w-full px-4 py-3 text-center border-t hover:bg-gray-50" href="pulse-check.html">Pulse Check</a>
+<a class="w-full px-4 py-3 text-center border-t hover:bg-gray-50" href="contact.html">Contact</a>
+<a class="w-full px-4 py-3 text-center border-t hover:bg-gray-50" href="about.html">About</a>
+<a class="w-full px-4 py-3 text-center border-t text-green-700 font-semibold hover:bg-gray-50" href="tel:2092132088">
+        Call Us: (209) 213-2088
+      </a>
+</nav>
+</div>
 </header>
-
 <script>
   function adjustHeader() {
     const logo = document.getElementById("site-logo");
@@ -48,8 +60,6 @@
   window.addEventListener("load", adjustHeader);
   window.addEventListener("resize", adjustHeader);
 </script>
-
-
 <script>
   function adjustLogo() {
     const logo = document.getElementById("site-logo");
@@ -68,8 +78,6 @@
   window.addEventListener("scroll", adjustLogo);
   window.addEventListener("load", adjustLogo);
 </script>
-
-
 <script>
   window.addEventListener("scroll", function() {
     const logo = document.getElementById("site-logo");
@@ -85,28 +93,26 @@
     }
   });
 </script>
-
-
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Technical Pulse Check | Ridgeline IT Solutions</title>
-  <meta name="description" content="Ridgeline IT Solutions offers a free onsite Technical Pulse Check — a no-cost IT health assessment covering security, stability, disaster recovery, and compliance. Get your report in 1–2 days.">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<link rel="canonical" href="https://ridgelineitsolutions.com/pulse-check.html">
-<meta name="keywords" content="Managed IT, Cybersecurity, Cloud Services, VoIP, Data Backup, IT Support Sonora, Mother Lode IT, California MSP">
-<meta name="author" content="Brian Carlson">
-<meta property="og:title" content="Ridgeline IT Solutions | Managed IT & Cybersecurity Experts">
-<meta property="og:description" content="Trusted IT partner serving the Mother Lode with proactive Managed IT, Cybersecurity, Cloud, and VoIP solutions.">
-<meta property="og:image" content="https://ridgelineitsolutions.com/assets/logo.png">
-<meta property="og:url" content="https://ridgelineitsolutions.com/pulse-check.html">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Free Technical Pulse Check | Ridgeline IT Solutions</title>
+<meta content="Ridgeline IT Solutions offers a free onsite Technical Pulse Check — a no-cost IT health assessment covering security, stability, disaster recovery, and compliance. Get your report in 1–2 days." name="description"/>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://ridgelineitsolutions.com/pulse-check.html" rel="canonical"/>
+<meta content="Managed IT, Cybersecurity, Cloud Services, VoIP, Data Backup, IT Support Sonora, Mother Lode IT, California MSP" name="keywords"/>
+<meta content="Brian Carlson" name="author"/>
+<meta content="Ridgeline IT Solutions | Managed IT &amp; Cybersecurity Experts" property="og:title"/>
+<meta content="Trusted IT partner serving the Mother Lode with proactive Managed IT, Cybersecurity, Cloud, and VoIP solutions." property="og:description"/>
+<meta content="https://ridgelineitsolutions.com/assets/logo.png" property="og:image"/>
+<meta content="https://ridgelineitsolutions.com/pulse-check.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Y59ZV51GK"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7Y59ZV51GK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -114,7 +120,7 @@
   gtag('config', 'G-7Y59ZV51GK');
 </script>
 <!-- Google Tag Manager -->
-<script async src="https://www.googletagmanager.com/gtm.js?id=GT-NC6687Q"></script>
+<script async="" src="https://www.googletagmanager.com/gtm.js?id=GT-NC6687Q"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -135,108 +141,129 @@
 }
 </script>
 </head>
-<body class="font-sans antialiased" style=\"padding-top:100px;\">
-
+<body class="font-sans antialiased" style='\"padding-top:100px;\"'>
 <!-- Hero -->
-<section class="bg-gray-100 py-20 text-center">
-  <h1 class="text-4xl md:text-5xl font-bold mb-4 text-green-700">Free Technical Pulse Check</h1>
-  <p class="text-xl mb-6">An onsite IT health assessment for your business</p>
-  <a href="#form" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow">
+<section class="bg-gray-100 py-20 text-center pt-28">
+<h1 class="text-4xl md:text-5xl font-bold mb-4 text-green-700">Free Technical Pulse Check</h1>
+<p class="text-xl mb-6">An onsite IT health assessment for your business</p>
+<a class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow" href="#form">
     Schedule My Pulse Check
   </a>
-<p class="mt-8 text-center text-gray-700">Many of these areas are covered by our <a href="services.html" class="text-green-600 hover:underline">Managed IT services</a>.</p>
+<p class="mt-8 text-center text-gray-700">Many of these areas are covered by our <a class="text-green-600 hover:underline" href="services.html">Managed IT services</a>.</p>
 </section>
-
 <!-- Intro -->
 <section class="py-16 max-w-4xl mx-auto px-6">
-  <p class="text-lg mb-6">
+<p class="text-lg mb-6">
     The <strong>Technical Pulse Check</strong> is a no-cost, no-obligation assessment where a Ridgeline IT consultant meets with you at your office, walks through your technology environment, and asks targeted questions to evaluate the health of your IT systems.
   </p>
-  <p class="text-lg">
+<p class="text-lg">
     Based on the <strong>NIST Cybersecurity Framework</strong> (Identify, Protect, Detect, Respond, Recover), the Pulse Check highlights the four areas most critical to small and mid-sized businesses:
   </p>
 </section>
-
 <!-- Key Areas -->
 <section class="bg-white py-16">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
-    <div>
-      <h3 class="text-2xl font-bold mb-2">🔒 Security</h3>
-      <p>Protection against today’s evolving cyber threats.</p>
-    </div>
-    <div>
-      <h3 class="text-2xl font-bold mb-2">⚙️ Stability</h3>
-      <p>Reliability of systems and infrastructure.</p>
-    </div>
-    <div>
-      <h3 class="text-2xl font-bold mb-2">💾 Disaster Recovery</h3>
-      <p>Your ability to recover quickly if disaster strikes.</p>
-    </div>
-    <div>
-      <h3 class="text-2xl font-bold mb-2">📑 Compliance</h3>
-      <p>Meeting the standards your industry requires.</p>
-    </div>
-  </div>
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
+<div>
+<h3 class="text-2xl font-bold mb-2">🔒 Security</h3>
+<p>Protection against today’s evolving cyber threats.</p>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-2">⚙️ Stability</h3>
+<p>Reliability of systems and infrastructure.</p>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-2">💾 Disaster Recovery</h3>
+<p>Your ability to recover quickly if disaster strikes.</p>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-2">📑 Compliance</h3>
+<p>Meeting the standards your industry requires.</p>
+</div>
+</div>
 </section>
-
 <!-- Process -->
 <section class="py-16 max-w-4xl mx-auto px-6">
-  <h2 class="text-3xl font-bold mb-6 text-green-700">What to Expect</h2>
-  <ol class="list-decimal pl-6 space-y-4 text-lg">
-    <li><strong>Onsite Interview</strong> – We meet with you or your key decision makers to review your IT environment.</li>
-    <li><strong>Focused Questionnaire</strong> – Together, we walk through key areas of your business to uncover risks and strengths.</li>
-    <li><strong>Detailed Report</strong> – Within 1–2 business days, we provide a clear report outlining your IT health, why each area matters, and practical recommendations.</li>
-  </ol>
+<h2 class="text-3xl font-bold mb-6 text-green-700">What to Expect</h2>
+<ol class="list-decimal pl-6 space-y-4 text-lg">
+<li><strong>Onsite Interview</strong> – We meet with you or your key decision makers to review your IT environment.</li>
+<li><strong>Focused Questionnaire</strong> – Together, we walk through key areas of your business to uncover risks and strengths.</li>
+<li><strong>Detailed Report</strong> – Within 1–2 business days, we provide a clear report outlining your IT health, why each area matters, and practical recommendations.</li>
+</ol>
 </section>
-
 <!-- Form -->
-<section id="form" class="bg-gray-50 py-16">
-  <div class="max-w-3xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center text-green-700">Schedule Your Pulse Check</h2>
-    <form action="https://formspree.io/f/xgvnybqw" method="POST" class="space-y-4 bg-white p-8 shadow rounded-lg">
-      <input type="text" name="name" placeholder="Your Name" required class="w-full border p-3 rounded">
-      <input type="text" name="company" placeholder="Company" class="w-full border p-3 rounded">
-      <input type="email" name="email" placeholder="Your Email" required class="w-full border p-3 rounded">
-      <input type="tel" name="phone" placeholder="Phone" class="w-full border p-3 rounded">
-      <textarea name="message" placeholder="Tell us about your IT needs..." rows="4" class="w-full border p-3 rounded"></textarea>
-      <input type="hidden" name="_redirect" value="https://ridgelineitsolutions.com/thank-you.html">
-      <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow w-full">Submit</button>
-    </form>
-  </div>
+<section class="bg-gray-50 py-16" id="form">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-3xl font-bold mb-6 text-center text-green-700">Schedule Your Pulse Check</h2>
+<form action="https://formspree.io/f/xgvnybqw" class="space-y-4 bg-white p-8 shadow rounded-lg" method="POST">
+<input class="w-full border p-3 rounded" name="name" placeholder="Your Name" required="" type="text"/>
+<input class="w-full border p-3 rounded" name="company" placeholder="Company" type="text"/>
+<input class="w-full border p-3 rounded" name="email" placeholder="Your Email" required="" type="email"/>
+<input class="w-full border p-3 rounded" name="phone" placeholder="Phone" type="tel"/>
+<textarea class="w-full border p-3 rounded" name="message" placeholder="Tell us about your IT needs..." rows="4"></textarea>
+<input name="_redirect" type="hidden" value="https://ridgelineitsolutions.com/thank-you.html"/>
+<button class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow w-full" type="submit">Submit</button>
+</form>
+</div>
 </section>
-
 <!-- Closing CTA -->
 <section class="bg-green-600 py-20 text-center text-white">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4">Schedule Your Free Pulse Check</h2>
-  <p class="mb-6 text-lg">Call us at <a href="tel:2092132088" class="underline">209-213-2088</a> or email <a href="mailto:info@ridgelineitsolutions.com" class="underline">info@ridgelineitsolutions.com</a>.</p>
-  <a href="#form" class="bg-white text-green-700 font-semibold py-3 px-6 rounded-lg shadow hover:bg-gray-100">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Schedule Your Free Pulse Check</h2>
+<p class="mb-6 text-lg">Call us at <a class="underline" href="tel:2092132088">209-213-2088</a> or email <a class="underline" href="mailto:info@ridgelineitsolutions.com">info@ridgelineitsolutions.com</a>.</p>
+<a class="bg-white text-green-700 font-semibold py-3 px-6 rounded-lg shadow hover:bg-gray-100" href="#form">
     Schedule Now
   </a>
 </section>
-
-
-
 <footer class="bg-gray-100 py-6 mt-16">
-  <div class="text-center text-gray-700">
-    <p><a href="tel:2092132088" class="text-green-600 hover:underline">(209) 213-2088</a> |
-       <a href="mailto:info@ridgelineitsolutions.com" class="text-green-600 hover:underline">info@ridgelineitsolutions.com</a></p>
-    <p class="mt-2 text-sm">&copy; 2025 Ridgeline IT Solutions. All rights reserved.</p>
-  </div>
+<div class="text-center text-gray-700">
+<p><a class="text-green-600 hover:underline" href="tel:2092132088">(209) 213-2088</a> |
+       <a class="text-green-600 hover:underline" href="mailto:info@ridgelineitsolutions.com">info@ridgelineitsolutions.com</a></p>
+<p class="mt-2 text-sm">© 2025 Ridgeline IT Solutions. All rights reserved.</p>
+</div>
 </footer>
-
-
-
-<!-- Mobile menu toggle (minimal) -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var btn = document.getElementById('menu-toggle');
-  var menu = document.getElementById('mobile-menu');
-  if (btn && menu) {
-    btn.addEventListener('click', function() {
-      menu.classList.toggle('hidden');
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const btn  = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  if (!btn || !menu) return;
+
+  function setExpanded(open) {
+    btn.setAttribute('aria-expanded', String(open));
   }
+
+  // Toggle on hamburger click
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const willOpen = menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    setExpanded(willOpen);
+  });
+
+  // Auto-hide when a mobile link is clicked
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (!menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+        setExpanded(false);
+      }
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
+      menu.classList.add('hidden');
+      setExpanded(false);
+    }
+  });
+
+  // Close when resizing to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      menu.classList.add('hidden');
+      setExpanded(false);
+    }
+  });
 });
-</script>
-</body>
+</script></body>
 </html>
