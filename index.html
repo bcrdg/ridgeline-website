@@ -178,27 +178,33 @@
 <!-- Script for mobile menu -->
 <!-- Particles.js script -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<!-- Particles.js script -->
 <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 70 },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.4 },
-        size: { value: 3 },
-        line_linked: { enable: true, color: "#ffffff", opacity: 0.2, width: 1 },
-        move: { enable: true, speed: 1.5 }
+try {
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 70 },
+      color: { value: "#ffffff" },
+      shape: { type: "circle" },
+      opacity: { value: 0.4 },
+      size: { value: 3 },
+      line_linked: { enable: true, color: "#ffffff", opacity: 0.2, width: 1 },
+      move: { enable: true, speed: 1.5 }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: false }
       },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "grab" },
-          onclick: { enable: false }
-        },
-        modes: { grab: { distance: 140, line_linked: { opacity: 0.4 } } }
-      },
-      retina_detect: true
-    });
-  </script>
+      modes: { grab: { distance: 140, line_linked: { opacity: 0.4 } } }
+    },
+    retina_detect: true
+  });
+} catch (err) {
+  console.warn("Particles.js failed to load:", err);
+}
+</script>
+
 <!-- Shrink Script -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
