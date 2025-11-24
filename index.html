@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -47,7 +46,16 @@
 </script>
 <!-- Google Tag Manager -->
 <script async="" src="https://www.googletagmanager.com/gtm.js?id=GT-NC6687Q"></script>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/></head>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+
+<!-- ✅ Fix: allow clicks through particle background -->
+<style>
+  #particles-js {
+    pointer-events: none;
+  }
+</style>
+
+</head>
 <body class="font-sans text-gray-800">
 <!-- Header -->
 <header class="bg-white shadow fixed w-full top-0 z-50 transition-all duration-300" id="site-header">
@@ -178,7 +186,6 @@
 <!-- Script for mobile menu -->
 <!-- Particles.js script -->
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-<!-- Particles.js script -->
 <script>
 try {
   particlesJS("particles-js", {
@@ -204,28 +211,22 @@ try {
   console.warn("Particles.js failed to load:", err);
 }
 </script>
-
 <!-- Shrink Script -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const btn  = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
-
   if (!btn || !menu) return;
 
   function setExpanded(open) {
     btn.setAttribute('aria-expanded', String(open));
   }
-
-  // Toggle on hamburger click
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     const willOpen = menu.classList.contains('hidden');
     menu.classList.toggle('hidden');
     setExpanded(willOpen);
   });
-
-  // Auto-hide when a mobile link is clicked
   menu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       if (!menu.classList.contains('hidden')) {
@@ -234,16 +235,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  // Close when clicking outside
   document.addEventListener('click', (e) => {
     if (!menu.classList.contains('hidden') && !menu.contains(e.target) && !btn.contains(e.target)) {
       menu.classList.add('hidden');
       setExpanded(false);
     }
   });
-
-  // Close when resizing to desktop
   window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) {
       menu.classList.add('hidden');
