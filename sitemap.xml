@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ridgelineitsolutions.com/</loc></url>
-  <url><loc>https://ridgelineitsolutions.com/services.html</loc></url>
-  <url><loc>https://ridgelineitsolutions.com/about.html</loc></url>
-  <url><loc>https://ridgelineitsolutions.com/pulse-check.html</loc></url>
-  <url><loc>https://ridgelineitsolutions.com/pulse-check-lite.html</loc></url>
-  <url><loc>https://ridgelineitsolutions.com/contact.html</loc></url>
-  <url><loc>https://ridgelineitsolutions.com/thank-you.html</loc></url>
+  <url><loc>https://ridgelineitsolutions.com/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/services.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/sonora-it-support.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/modesto-it-support.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/about.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/pulse-check.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/pulse-check-lite.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/contact.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://ridgelineitsolutions.com/thank-you.html</loc><lastmod>2026-10-15</lastmod></url>
 </urlset>
