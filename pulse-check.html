@@ -124,20 +124,43 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Ridgeline IT Solutions",
-  "url": "https://ridgelineitsolutions.com/",
-  "telephone": "(209) 213-2088",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "19506 Industrial Dr, Ste A",
-    "addressLocality": "Sonora",
-    "addressRegion": "CA",
-    "postalCode": "95370",
-    "addressCountry": "US"
-  },
-  "geo": { "latitude": 37.976422, "longitude": -120.318671 },
-  "openingHours": "Mo-Fr 08:00-16:00"
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ridgelineitsolutions.com/#sonora",
+      "name": "Ridgeline IT Solutions",
+      "image": "https://ridgelineitsolutions.com/assets/logo.png",
+      "url": "https://ridgelineitsolutions.com/",
+      "telephone": "+12092132088",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19506 Industrial Dr, Ste A",
+        "addressLocality": "Sonora",
+        "addressRegion": "CA",
+        "postalCode": "95370",
+        "addressCountry": "US"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 37.976422, "longitude": -120.318671 },
+      "openingHours": "Mo-Fr 08:00-16:00"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://ridgelineitsolutions.com/#modesto",
+      "name": "Ridgeline IT Solutions",
+      "image": "https://ridgelineitsolutions.com/assets/logo.png",
+      "url": "https://ridgelineitsolutions.com/",
+      "telephone": "+12092132088",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1100 Carver Rd, Ste Z",
+        "addressLocality": "Modesto",
+        "addressRegion": "CA",
+        "postalCode": "95350",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 08:00-16:00"
+    }
+  ]
 }
 </script>
 </head>
@@ -215,6 +238,11 @@
 <div class="text-center text-gray-700">
 <p><a class="text-green-600 hover:underline" href="tel:2092132088">(209) 213-2088</a> |
        <a class="text-green-600 hover:underline" href="mailto:info@ridgelineitsolutions.com">info@ridgelineitsolutions.com</a></p>
+<address class="not-italic mt-2 text-sm">
+  <a class="hover:underline" href="https://maps.google.com/?q=19506+Industrial+Dr+Ste+A,+Sonora,+CA+95370" target="_blank" rel="noopener">19506 Industrial Dr, Ste A, Sonora, CA 95370</a>
+  <span class="hidden sm:inline mx-2">|</span><br class="sm:hidden">
+  <a class="hover:underline" href="https://maps.google.com/?q=1100+Carver+Rd+Ste+Z,+Modesto,+CA+95350" target="_blank" rel="noopener">1100 Carver Rd, Ste Z, Modesto, CA 95350</a>
+</address>
 <p class="mt-2 text-sm">© 2025 Ridgeline IT Solutions. All rights reserved.</p>
 </div>
 </footer>
